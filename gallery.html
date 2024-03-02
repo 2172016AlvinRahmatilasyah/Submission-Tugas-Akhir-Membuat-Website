@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleGallery.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <div a href="#" class="logo">Rick and Morty</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="character.html">Character</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="saya.html">Profil Saya</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="g1">    
+            <h1> Image Gallery </h1>
+            <div class="g2">
+                <img src="image/1.jpg"  onclick="gambar(this)"> 
+                <img src="image/2.jpg"  onclick="gambar(this)">
+                <img src="image/3.png"  onclick="gambar(this)">
+                <img src="image/4.png" onclick="gambar(this)">
+                <img src="image/5.png" onclick="gambar(this)">
+                <img src="image/6.jpg" onclick="gambar(this)">
+                <img src="image/7.jpg" onclick="gambar(this)">
+                <img src="image/8.webp"  onclick="gambar(this)">
+                <img src="image/9.jpg"  onclick="gambar(this)">
+                <img src="image/10.jpg" onclick="gambar(this)"> 
+            </div> 
+            <aside class="g3">
+                <img src="image/1.jpg" id="besar"> 
+            </aside>           
+        </div>
+         
+        <script>
+            window.addEventListener("scroll",function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY);
+            })
+
+            function gambar(s){
+                var f = document.getElementById("besar");
+                f.src = s.src; 
+            }
+        </script>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2024 RICK and Morty. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:wght@500&family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Home</title>
+   
+</head>
+<body> 
+    <header>
+        <div a href="#" class="logo">Rick and Morty</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="character.html">Character</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+			<li><a href="saya.html">Profil Saya</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="image/cover2.png">
+        </section>
+        <article>
+            <aside>
+                <img src="image/aside.jpeg">
+            </aside>
+                Rick and Morty adalah animasi Amerika tentang fiksi ilmiah yang dibuat oleh Justin Roiland dan Dan Harmon.
+                Rick and Morty ditayangkan pada malam hari di Cartoon Network. Serial ini mengikuti kesialan ilmuwan gila, Rick Sanchez
+                dan cucunya yang baik hati yaitu Morty Smith. Mereka membagi waktu antara kehidupan rumah tangga dan petualangan interdimensional.
+            <aside>
+                <img src="image/aside.jpeg">
+            </aside>
+        </article>
+        <br><br><br>
+        <div id="data">DATA SINGKAT</div><div id="jdl"> RICK AND MORTY</div><br>
+        <table>
+            <tr><td>
+                <br>
+                <div class="text1">Genre : Animated sitcom, Science fiction, Black comedy, Adventure</div>
+                <div class="text2">Dibuat oleh : Justin Roiland dan Dan Hormon</div>
+                <div class="text1">Pengisi suara : Justin Roiland, Chris Parnell, Spencer Grammer, Sarah Chalke, Kari Wahlgren</div>
+                <div class="text2">Komposer : Ryan Elder</div>
+                <div class="text1">Asal negara : Amerika Serikat</div>
+                <div class="text2">Jumlah season : 5</div>
+                <div class="text1">Jumlah episode : 51</div>
+                <br>
+            </td></tr>
+        </table>
+        <br><br>
+        <figure>
+            <div class="trailer">TRAILER</div>
+            <div class="piframe">
+                <div id="f1"><iframe width="360" height="215" src="https://www.youtube.com/embed/BFTSrbB2wII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="f2"><iframe width="360" height="215" src="https://www.youtube.com/embed/y23LCrlGQiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="f3"><iframe width="360" height="215" src="https://www.youtube.com/embed/YUi5kz5RqfQ?si=Q6U6pxds6mbBt2TO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+            <div class="piframe2">
+                <div id="f4"><iframe width="360" height="215" src="https://www.youtube.com/embed/hl1U0bxTHbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div id="f5"><iframe width="360" height="215" src="https://www.youtube.com/embed/omwfbvfYpeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </figure>
+        <script>
+            window.addEventListener("scroll",function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY);
+            })
+        </script>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2024 RICK and Morty. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

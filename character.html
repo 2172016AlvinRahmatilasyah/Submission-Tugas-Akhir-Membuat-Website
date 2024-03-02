@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:wght@500&family=Signika+Negative&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/stylecharacter.css">
+    <title>Character</title>
+</head>
+<body>
+    <header>
+        <div a href="#" class="logo">Rick and Morty</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="character.html">Character</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="saya.html">Profil Saya</a></li>
+        </ul>
+    </header>
+    <main class="flex-container">
+        <figure class="all">
+            <div id="image1"></div>
+            <aside class="desc">
+                <div id="k1"></div>
+                <div id="stat1"></div>
+                <div id="spe1"></div>
+                <div id="type1"></div>
+            </aside>
+        </figure>
+        <hr color="#00d1d1" width="580px">
+
+        <figure class="all">
+            <div id="image2"></div>
+            <aside class="desc">
+                <div id="k2"></div>
+                <div id="stat2"></div>
+                <div id="spe2"></div>
+                <div id="type2"></div>
+            </aside>
+        </figure>
+        <hr color="#00d1d1" width="580px">
+
+        <figure class="all">
+            <div id=image3></div>
+            <aside class="desc">
+                <div id=k3></div>
+                <div id=stat3></div>
+                <div id=spe3></div>
+                <div id="type3"></div>
+            </aside>
+        </figure>
+        <hr color="#00d1d1" width="580px">
+
+        <figure class="all">
+            <div id=image4></div>
+            <aside class="desc">
+                <div id=k4></div>
+                <div id=stat4></div>
+                <div id=spe4></div>
+                <div id="type4"></div>
+            </aside>
+        </figure>
+        <hr color="#00d1d1" width="580px">
+
+        <figure class="all">
+            <div id=image5></div>
+            <aside class="desc">
+                <div id=k5></div>
+                <div id=stat5></div>
+                <div id=spe5></div>
+                <div id="type5"></div>
+            </aside>
+        </figure>
+        <hr color="#00d1d1" width="580px">
+
+        <figure class="all">
+            <div id=image6></div>
+            <aside class="desc">
+                <div id=k6></div>
+                <div id=stat6></div>
+                <div id=spe6></div>
+                <div id="type6"></div>
+            </aside>
+        </figure>
+        <hr color="#00d1d1" width="580px">
+
+        <figure class="all">
+            <div id=image7></div>
+            <aside class="desc">
+                <div id=k7></div>
+                <div id=stat7></div>
+                <div id=spe7></div>
+                <div id="type7"></div>
+            </aside>
+        </figure>
+        <hr color="#00d1d1" width="580px">
+
+        <figure class="all">
+            <div id=image8></div>
+            <aside class="desc">
+                <div id=k8></div>
+                <div id=stat8></div>
+                <div id=spe8></div>
+                <div id="type8"></div>
+            </aside>
+        </figure>
+        <hr color="#00d1d1" width="580px">
+
+        <figure class="all">
+            <div id=image9></div>
+            <aside class="desc">
+                <div id=k9></div>
+                <div id=stat9></div>
+                <div id=spe9></div>
+                <div id="type9"></div>
+            </aside>
+        </figure>
+        <hr color="#00d1d1" width="580px">
+
+        <figure class="all">
+            <div id=image10></div>
+            <aside class="desc">
+                <div id=k10></div>
+                <div id=stat10></div>
+                <div id=spe10></div>
+                <div id="type10"></div>
+            </aside>
+        </figure>
+        <br><br>
+        <script>
+            window.addEventListener("scroll",function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY);
+            })
+            $.getJSON("https://rickandmortyapi.com/api/character", function(result){
+                let karakter = 0;
+                for (let i=0;i<11;i++) {
+                    karakter = i+1;
+                    document.querySelector("#image" + karakter).innerHTML = "<img src='"+result.results[i].image+"'>"
+                    document.querySelector("#k" + karakter).innerHTML = result.results[i].name
+                    document.querySelector("#stat" + karakter).innerHTML = "- Status : " + result.results[i].status
+                    document.querySelector("#spe" + karakter).innerHTML = "- Species : " + result.results[i].species
+                    document.querySelector("#type" + karakter).innerHTML = result.results[i].type
+                }
+            })
+        </script>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2024 RICK and Morty. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

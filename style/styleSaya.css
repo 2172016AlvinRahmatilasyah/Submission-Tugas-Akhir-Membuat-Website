@@ -1,0 +1,40 @@
+.all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    position: relative;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden; 
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.profile,
+.gambar {
+    margin-top: 150px;
+    margin-left: 90px;
+    width: 45%;
+    color: white;
+}
+
+.gambar img {
+    width: 50%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

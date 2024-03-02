@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 250vh;
+}
+h1 {
+    font-size: 50px white;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 30px 0 50px;
+}
+.g2 img{
+    height: 100px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: .6;
+}
+.g1{
+    margin-top: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 1000px;
+}
+
+.g3 img{
+    height: 500px;
+    width: 800px;
+}
+.g2 {
+    float: left;
+    height: 200px;
+    width: auto;
+}
+.g3 {
+    float: right;
+    padding: 10px;
+}
+
+.g2 img:hover {
+    opacity: 1;
+}
+footer {
+    margin-top: 240vh;
+    background-color: #101010;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 0;
+    font-size: 14px;
+}
